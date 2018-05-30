@@ -17,7 +17,7 @@ var currentLine = function(katzDeliLine) {
   line_message += katzDeliLine.length === 0 ? " empty" : ":";
   
   for (let i = 0; i < katzDeliLine.length; i++) {
-      line_message += `${i === 0 ? '' : ','} ${i}. ${katzDeliLine[i]}`;
+      line_message += `${i === 0 ? '' : ','} ${i+1}. ${katzDeliLine[i]}`;
   }
   return line_message;
 };
